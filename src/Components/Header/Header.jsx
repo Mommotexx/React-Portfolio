@@ -1,7 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 const Header = () => {
     return (
-        <header className="flex justify-start items-center">
+        <header className="flex justify-start items-center lg:w-8/12 m-auto">
             <img
                 src="/images/logo.svg"
                 alt="logo Marcus"

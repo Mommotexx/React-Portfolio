@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="mt-24 flex flex-col lg:w-8/12 m-auto items-center">
+        <section className="mt-24 flex flex-col lg:w-8/12 m-auto items-center text-center">
             <h1 className="text-4xl font-bold font-header">
                 Java Full Stack Developer
             </h1>
@@ -8,9 +8,9 @@ const Hero = () => {
                 I develop and code fullstack solutions, and I love what I do.
             </p>
             <img
-                src="https://mattfarley.ca/img/mf-avatar.svg"
+                src="/images/portrait.jpeg"
                 alt="image of me"
-                className="w-3/12 mt-14"
+                className="w-3/12 mt-14 rounded-full"
             />
             <img
                 src="/images/programmer.svg"

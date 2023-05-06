@@ -16,7 +16,7 @@ export const devitem = [
     {
         title: "Backend Developer",
         description:
-            "I genuinely care about data, and I love to solve challenging problems, and I love make an application come to life",
+            "I genuinely care about data, I love to solve challenging problems, and I love make an application come to life",
         technologies: [
             "Java",
             "Spring Boot",

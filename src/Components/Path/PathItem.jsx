@@ -7,7 +7,7 @@ const PathItem = ({ title, icon, description, technologies, devTools }) => {
             <h1 className="font-opensans font-bold mt-2">{title}</h1>
             <p className="mt-6 md:min-h-[80px]">{description}</p>
             <p className="mt-8 text-green font-semibold">Technologies I use:</p>
-            <p>HTML, CSS, JavaScript, React, Tailwind CSS, Git</p>
+            <p>{technologies.join(", ")} </p>
             <p className="mt-8 text-green font-semibold">Dev tools:</p>
             <ul>
                 {devTools.map((tool) => (

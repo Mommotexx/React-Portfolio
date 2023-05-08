@@ -4,6 +4,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import Paths from "./Components/Path/Paths";
+import Project from "./Components/Project/Project";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Hero />
             <About />
             <Paths />
+            <Project />
             <Contact />
             <Footer />
         </>

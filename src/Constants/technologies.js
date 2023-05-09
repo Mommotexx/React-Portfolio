@@ -7,6 +7,8 @@ const technologies = {
     mysql: "/images/tech/mysql.png",
     git: "/images/tech/git.png",
     tailwind: "/images/tech/tailwind.png",
+    html: "/images/tech/html.png",
+    css: "/images/tech/css.png",
 };
 
 export default technologies;

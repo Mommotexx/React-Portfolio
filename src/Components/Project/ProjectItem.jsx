@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProjectItem = ({
     title,
@@ -8,17 +8,27 @@ const ProjectItem = ({
     background,
 }) => {
     const [showBg, setShowBg] = useState(true);
+
     return (
         <article
-            className={`project_item flex flex-col w-full items-center md:w-[30%] min-h-[200px] text-white bg-[#0c6b03]  py-6 rounded-lg ${
-                showBg &&
-                `bg-[url('${background}')] bg-cover bg-no-repeat bg-left bg-center`
-            } `}
+            className="project_item flex flex-col w-full items-center md:w-[30%] min-h-[200px] bg-[#0c6b03] text-white py-6 rounded-lg"
+            style={
+                showBg
+                    ? {
+                          backgroundImage: `url(${background})`,
+                          backgroundPosition: "center",
+                          backgroundSize: "cover",
+                          backgroundRepeat: "no-repeat",
+                      }
+                    : null
+            }
             onFocus={() => setShowBg(false)}
             onMouseEnter={() => setShowBg(false)}
             onMouseLeave={() => setShowBg(true)}
         >
-            {showBg && <h2>{title}</h2>}
+            {showBg && (
+                <h2 className="bg-dark rounded px-2 bg-opacity-50">{title}</h2>
+            )}
             <div
                 className={`flex flex-col w-full items-center -z-20 ${
                     !showBg && `z-30`
@@ -38,7 +48,7 @@ const ProjectItem = ({
                 <p className="font-opensans mb-2">{shortDescription}</p>
                 <a
                     href={demo}
-                    className=" border-green border-[1.5px] p-2 rounded-2xl"
+                    className=" border-green border-[1.5px] p-2 rounded-2xl hover:bg-green hover:text-dark"
                 >
                     Visit Website
                 </a>

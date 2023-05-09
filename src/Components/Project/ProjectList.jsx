@@ -12,6 +12,7 @@ const ProjectList = () => {
             shortDescription={project.shortDescription}
             technologies={project.technologies}
             demo={project.demo}
+            background={project.background}
         />
     ));
 };

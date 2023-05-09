@@ -5,29 +5,37 @@ export const projectitem = () => {
             title: "Alumni Network",
             shortDescription:
                 "A fullstack social media platform coded in Javascript (React) and Java Spring",
-            technologies: [technologies.java, technologies.react],
+            technologies: [
+                technologies.java,
+                technologies.react,
+                technologies.javascript,
+            ],
             demo: "https://vg.no",
+            background: "/images/projects/alumni.jpg",
         },
         {
             title: "Alumni Network",
             shortDescription:
                 "A fullstack social media platform coded in Javascript (React) and Java Spring",
-            technologies: [technologies.react],
+            technologies: [
+                technologies.java,
+                technologies.react,
+                technologies.javascript,
+            ],
             demo: "https://vg.no",
+            background: "/images/projects/alumni.jpg",
         },
         {
             title: "Alumni Network",
             shortDescription:
                 "A fullstack social media platform coded in Javascript (React) and Java Spring",
-            technologies: [technologies.react],
+            technologies: [
+                technologies.java,
+                technologies.react,
+                technologies.javascript,
+            ],
             demo: "https://vg.no",
-        },
-        {
-            title: "Alumni Network",
-            shortDescription:
-                "A fullstack social media platform coded in Javascript (React) and Java Spring",
-            technologies: [technologies.react],
-            demo: "https://vg.no",
+            background: "/images/projects/alumni.jpg",
         },
     ];
 };

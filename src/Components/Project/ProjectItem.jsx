@@ -1,15 +1,19 @@
-import React from "react";
-
-const ProjectItem = ({ title, shortDescription, technologies, demo }) => {
+const ProjectItem = ({
+    title,
+    shortDescription,
+    technologies,
+    demo,
+    background,
+}) => {
     return (
-        <article className="flex flex-col w-full items-center md:w-4/12">
-            <div className="flex">
+        <article className="project_item flex flex-col w-full items-center md:w-[30%] bg-[#0a6d1f] text-white py-6 rounded-lg">
+            <div className="flex mb-2">
                 {technologies.map((tech) => (
                     <img
-                        key={tech}
+                        key={"Title " + tech}
                         src={tech}
-                        width={24}
-                        className="saturate-0"
+                        width={32}
+                        className="saturate-0 mr-2"
                     />
                 ))}
             </div>

@@ -11,7 +11,7 @@ const Project = () => {
                 Here are some of the latest projects I have worked on
             </p>
 
-            <div className="mt-8 flex justify-between flex-wrap gap-y-6">
+            <div className="mt-8 flex justify-between flex-wrap gap-y-11">
                 <ProjectList />
             </div>
         </section>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const ProjectItem = ({
     title,
@@ -48,6 +48,7 @@ const ProjectItem = ({
                 <p className="font-opensans mb-2">{shortDescription}</p>
                 <a
                     href={demo}
+                    target="_blank"
                     className=" border-green border-[1.5px] p-2 rounded-2xl hover:bg-green hover:text-dark"
                 >
                     Visit Website

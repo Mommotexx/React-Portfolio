@@ -7,7 +7,7 @@ const Contact = () => {
             <img
                 src="/images/undraw_agreement_re_d4dv.svg"
                 alt="illustration"
-                className="absolute block left-5 top-[30%] w-[150px] m-auto md:left-0 md:w-[100px] lg:w-[200px] lg:left-[5vw] xl:left-[10vw]"
+                className="absolute hidden md:block left-5 top-[30%] w-[150px] m-auto md:left-0 md:w-[100px] lg:w-[200px] lg:left-[5vw] xl:left-[10vw]"
             />
             <h1 className="mt-10 font-header text-3xl">Let's get in touch</h1>
             <form

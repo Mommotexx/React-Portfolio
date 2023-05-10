@@ -6,9 +6,15 @@ const Header = () => {
                 src="/images/logo.svg"
                 alt="logo Marcus"
                 className="ml-6 w-40 md:w-80 xl:w-3/12 hover:cursor-pointer"
+                onClick={() => (window.location.href = "/")}
             />
             <div className="flex gap-6 items-center justify-end flex-1 mr-10">
-                <FaLinkedinIn className="hover:text-green hover:cursor-pointer text-lg" />
+                <a
+                    href="https://www.linkedin.com/in/marcusvinje/"
+                    target="_blank"
+                >
+                    <FaLinkedinIn className="hover:text-green hover:cursor-pointer text-lg" />
+                </a>
                 <a
                     type="button"
                     className="text-dark border-2 border-green rounded-3xl px-6 py-2 hover:cursor-pointer hover:bg-green hover:text-white ease-in transition-all text-lg"

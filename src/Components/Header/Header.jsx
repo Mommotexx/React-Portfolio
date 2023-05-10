@@ -9,12 +9,13 @@ const Header = () => {
             />
             <div className="flex gap-6 items-center justify-end flex-1 mr-10">
                 <FaLinkedinIn className="hover:text-green hover:cursor-pointer text-lg" />
-                <button
+                <a
                     type="button"
                     className="text-dark border-2 border-green rounded-3xl px-6 py-2 hover:cursor-pointer hover:bg-green hover:text-white ease-in transition-all text-lg"
+                    href="#contact"
                 >
                     Contact
-                </button>
+                </a>
             </div>
         </header>
     );

@@ -10,7 +10,7 @@ export const projectitem = () => {
                 technologies.javascript,
                 technologies.css,
             ],
-            demo: "https://mvj-gericht-restaurant.netlify.app/",
+            demo: "https://gericht.marcusjohansen.com/",
             background: "/images/projects/gericht.jpg",
         },
         {
@@ -23,7 +23,7 @@ export const projectitem = () => {
                 technologies.react,
                 technologies.javascript,
             ],
-            demo: "https://vg.no",
+            demo: "https://alumni.marcusjohansen.com/",
             background: "/images/projects/alumni.jpg",
         },
     ];

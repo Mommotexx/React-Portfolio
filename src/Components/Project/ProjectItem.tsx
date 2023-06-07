@@ -1,12 +1,7 @@
 import { useState } from "react";
+import { projectItemProps } from "./interface/projectItemProps";
 
-const ProjectItem = ({
-    title,
-    shortDescription,
-    technologies,
-    demo,
-    background,
-}) => {
+const ProjectItem = (props:projectItemProps) => {
     const [showBg, setShowBg] = useState(true);
 
     return (
@@ -15,7 +10,7 @@ const ProjectItem = ({
             style={
                 showBg
                     ? {
-                          backgroundImage: `url(${background})`,
+                          backgroundImage: `url(${props.background})`,
                           backgroundPosition: "center",
                           backgroundSize: "cover",
                           backgroundRepeat: "no-repeat",
@@ -27,7 +22,7 @@ const ProjectItem = ({
             onMouseLeave={() => setShowBg(true)}
         >
             {showBg && (
-                <h2 className="bg-dark rounded px-2 bg-opacity-50">{title}</h2>
+                <h2 className="bg-dark rounded px-2 bg-opacity-50">{props.title}</h2>
             )}
             <div
                 className={`flex flex-col w-full items-center -z-20 ${
@@ -35,7 +30,7 @@ const ProjectItem = ({
                 }`}
             >
                 <div className="flex mb-2">
-                    {technologies.map((tech) => (
+                    {props.technologies.map((tech) => (
                         <img
                             key={"Title " + tech}
                             src={tech}
@@ -44,10 +39,10 @@ const ProjectItem = ({
                         />
                     ))}
                 </div>
-                <h1 className="font-opensans">{title}</h1>
-                <p className="font-opensans mb-2">{shortDescription}</p>
+                <h1 className="font-opensans">{props.title}</h1>
+                <p className="font-opensans mb-2">{props.shortDescription}</p>
                 <a
-                    href={demo}
+                    href={props.demo}
                     target="_blank"
                     className=" border-green border-[1.5px] p-2 rounded-2xl hover:bg-green hover:text-dark"
                 >

@@ -1,13 +1,15 @@
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header className="flex justify-start items-center lg:w-8/12 m-auto">
-            <img
-                src="/images/logo.svg"
-                alt="logo Marcus"
-                className="ml-6 w-40 md:w-80 xl:w-3/12 hover:cursor-pointer"
-                onClick={() => (window.location.href = "/")}
-            />
+            <Link to={"/"}>
+                <img
+                    src="/images/logo.svg"
+                    alt="logo Marcus"
+                    className="ml-6 w-40 md:w-80 xl:w-3/12 hover:cursor-pointer"
+                />
+            </Link>
             <div className="flex gap-6 items-center justify-end flex-1 mr-10">
                 <a
                     href="https://www.linkedin.com/in/marcusvinje/"

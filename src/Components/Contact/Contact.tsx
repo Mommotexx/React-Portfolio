@@ -1,4 +1,4 @@
-const Contact = () => {
+const Contact = (): JSX.Element => {
     return (
         <section
             className="relative flex flex-col lg:w-full m-auto items-center h-fit bg-green mt-20 font-opensans"

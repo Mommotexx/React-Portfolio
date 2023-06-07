@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projectItemProps } from "./interface/projectItemProps";
 
-const ProjectItem = (props:projectItemProps) => {
+const ProjectItem = (props: projectItemProps) => {
     const [showBg, setShowBg] = useState(true);
 
     return (
@@ -15,14 +15,16 @@ const ProjectItem = (props:projectItemProps) => {
                           backgroundSize: "cover",
                           backgroundRepeat: "no-repeat",
                       }
-                    : null
+                    : undefined
             }
             onFocus={() => setShowBg(false)}
             onMouseEnter={() => setShowBg(false)}
             onMouseLeave={() => setShowBg(true)}
         >
             {showBg && (
-                <h2 className="bg-dark rounded px-2 bg-opacity-50">{props.title}</h2>
+                <h2 className="bg-dark rounded px-2 bg-opacity-50">
+                    {props.title}
+                </h2>
             )}
             <div
                 className={`flex flex-col w-full items-center -z-20 ${

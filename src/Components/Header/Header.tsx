@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header className="flex justify-start items-center lg:w-8/12 m-auto">
-            <Link to={"/"}>
+            <Link to={""} ref={this}>
                 <img
                     src="/images/logo.svg"
                     alt="logo Marcus"

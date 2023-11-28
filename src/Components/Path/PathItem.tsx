@@ -1,9 +1,9 @@
 export interface Props {
     title: string,
-    icon: any,
+    icon: JSX.Element,
     description: string,
     technologies: string[],
-    devTools: any[]
+    devTools: string[]
 }
 
 

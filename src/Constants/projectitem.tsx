@@ -11,7 +11,7 @@ export const projectitem = () => {
                 technologies.css,
             ],
             demo: "https://gericht.marcusjohansen.com/",
-            background: "/images/projects/gericht.jpg",
+            background: "/images/projects/gericht-resized.jpg",
         },
         {
             title: "Alumni Network",
@@ -24,7 +24,7 @@ export const projectitem = () => {
                 technologies.javascript,
             ],
             demo: "https://alumni.marcusjohansen.com/",
-            background: "/images/projects/alumni.jpg",
+            background: "/images/projects/alumni-resized.jpg",
         },
     ];
 };

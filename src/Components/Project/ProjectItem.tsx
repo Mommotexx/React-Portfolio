@@ -6,14 +6,11 @@ const ProjectItem = (props: projectItemProps) => {
 
     return (
         <article
-            className="project_item flex flex-col w-full items-center md:w-[30%] min-h-[200px] bg-[#0c6b03] text-white py-6 rounded-lg"
+            className="project_item flex flex-col w-full items-center md:w-[30%] min-h-[200px] bg-[#0c6b03] text-white py-6 rounded-lg bg-center bg-no-repeat bg-cover"
             style={
                 showBg
                     ? {
-                          backgroundImage: `url(${props.background})`,
-                          backgroundPosition: "center",
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
+                          backgroundImage: `url(${props.background})`                         
                       }
                     : undefined
             }

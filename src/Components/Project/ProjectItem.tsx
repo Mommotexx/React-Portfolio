@@ -22,8 +22,8 @@ const ProjectItem = (props: projectItemProps) => {
             );
           })}
         </div>
-        <h1 className="font-opensans">{props.title}</h1>
-        <p className="font-opensans mb-2">{props.shortDescription}</p>
+        <h1 className="font-opensans mt-2">{props.title}</h1>
+        <p className="font-opensans mb-2 mt-2 ">{props.shortDescription}</p>
         <a
           href={props.demo}
           target="_blank"

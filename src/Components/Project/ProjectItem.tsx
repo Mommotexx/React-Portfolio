@@ -9,15 +9,13 @@ const ProjectItem = (props: projectItemProps) => {
       <h2 className="bg-dark rounded px-2 bg-opacity-50">{props.title}</h2>
       <div className="hover:opacity-100 bg-dark absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center opacity-0 transition-all ease-in-out duration-300">
         <div className="flex mb-2">
-
         {props.technologies.map((tech) => {
             // Extract the technology name from the image path
             const techName = tech.split("/").pop().split(".")[0];
             return (
               <span
                 key={"Title " + techName}
-                className="saturate-0 mr-2"
-                style={{ color: "white", width: "32px", height: "32px" }}
+                className="mr-2 fill-white w-[32px] h-[32px]"              
               >
                 <Icon name={techName} />
               </span>

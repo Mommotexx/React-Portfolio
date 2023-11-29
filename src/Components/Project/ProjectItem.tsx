@@ -17,7 +17,7 @@ const ProjectItem = (props: projectItemProps) => {
     <a
       href={props.demo}
       target="_blank"
-      className="border-green border-[1.5px] p-2 rounded-2xl hover:bg-green hover:text-dark"
+      className="border-green border-[1.5px] p-2 rounded-2xl hover:bg-green hover:text-dark mt-4 transition-all ease-in-out duration-300"
     >
       Visit Website
     </a>

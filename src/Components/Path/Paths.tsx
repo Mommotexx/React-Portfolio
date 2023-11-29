@@ -4,7 +4,7 @@ import { devitem } from "../../Constants/devitem";
 
 const Paths = () => {
     return (
-        <section className="flex flex-col lg:w-8/12 m-auto bg-white -mt-20 md:-mt-28 rounded-xl drop-shadow">
+        <section className="flex flex-col lg:w-8/12 bg-white -mt-20 md:-mt-28 rounded-xl drop-shadow p-6 m-6 md:p-0 md:m-auto">
             <div className="flex flex-col justify-evenly md:flex-row py-6">
                 <PathItem
                     title={devitem[0].title}

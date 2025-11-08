@@ -1,3 +1,11 @@
+const calculateAge = () => {
+    const birthDateStr = "08-18-1999";
+    const birthDate = new Date(birthDateStr);
+    const today = new Date();
+    const age = today.getFullYear() - birthDate.getFullYear() - (today.getMonth() < birthDate.getMonth() || (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate()) ? 1 : 0);
+    return age;
+}
+
 const About = () => {
     return (
         <section className="flex flex-col lg:w-full m-auto items-center h-[60vh] bg-green -mt-10 md:-mt-20">
@@ -6,7 +14,7 @@ const About = () => {
                     Hi I'm Marcus. Nice to meet you!
                 </h2>
                 <p className="font-opensans text-md leading-relaxed">
-                    I am a 23 year old man, and I have been highly interested in
+                    I am a {calculateAge()} year old man, and I have been highly interested in
                     technology since I was young. In the recent years I have
                     attended a Full-stack Java Bootcamp, and I work good with
                     others in a team and by myself. I'm a curious person and I
